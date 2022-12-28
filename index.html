@@ -1,16 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Your favorite music is here</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
     <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/fce26cef2b.js" crossorigin="anonymous" defer></script>
 </head>
+
 <body>
     <nav>
-
+        <ul>
+            <li class="brand"><img alt="logo" src="./logo.png" /> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
     </nav>
+    <div class="container">
+        <h1>Best of All - No copywrite songs only </h1>
+        <div class="songsContainer">
+            <div class="songs-item">
+                <img alt="1" src="./covers/1.jpg" />
+                <span>Legions</span>
+                <span class="timespan">4:15 <i id="0" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="2" src="./covers/2.jpg" />
+                <span>Trap</span>
+                <span class="timespan">3:15 <i id="1" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="3" src="./covers/3.jpg" />
+                <span>They Mad</span>
+                <span class="timespan">5:15 <i id="2" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="4" src="./covers/4.jpg" />
+                <span>Rich The Kid</span>
+                <span class="timespan">4:45 <i id="3" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="5" src="./covers/5.jpg" />
+                <span>Name</span>
+                <span class="timespan">3:55 <i id="4" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="6" src="./covers/6.jpg" />
+                <span>The Safety Dance</span>
+                <span class="timespan">4:10 <i id="5" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="7" src="./covers/7.jpg" />
+                <span>Back It Up</span>
+                <span class="timespan">5:15 <i id="6" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+            <div class="songs-item">
+                <img alt="10" src="./covers/10.jpg" />
+                <span>True Love</span>
+                <span class="timespan">4:30 <i id="7" class="fa-regular fa-circle-play song"></i></span>
+            </div>
+        </div>
+        <div class="song-banner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="playing" min="0" max="100" />
+        <div class="icons">
+            <i class="fa-solid fa-3x fa-backward-step" id="prev"></i>
+            <i class="fa-regular fa-3x fa-circle-play" id="master-play"></i>
+            <i class="fa-solid fa-3x fa-forward-step" id="forward"></i>
+        </div>
+        <div class="songInfo">
+            <img id="playing-gif" alt="gif" src="./playing.gif"/> <span id="song-name"></span>
+        </div>
+    </div>
 </body>
+
 </html>
