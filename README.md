@@ -1,2 +1,5 @@
 # Spotify-Clone
-Spotify clone using plain html, css and javascript
+To learn new Audio() functionality and working in javascript
+
+
+![alt text](design.png)
